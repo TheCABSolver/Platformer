@@ -8,8 +8,9 @@
 #include <SFML/Graphics.hpp>
 #include "TinyXML/tinyxml.h"
 
-struct Object
+class Object
 {
+public:
 	int GetPropertyInt(std::string name);
 	float GetPropertyFloat(std::string name);
 	std::string GetPropertyString(std::string name);
@@ -22,8 +23,9 @@ struct Object
 	sf::Sprite sprite;
 };
 
-struct Layer
+class Layer
 {
+public:
 	int opacity;
 	std::vector<sf::Sprite> tiles;
 };

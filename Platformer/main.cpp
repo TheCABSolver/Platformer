@@ -3,6 +3,5 @@
 int main()
 {
 	RunGame();
-
 	return 0;
 }
